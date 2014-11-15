@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		746172CF1A17012300B64378 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 746172CE1A17012300B64378 /* main.m */; };
+		746172D21A17012300B64378 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 746172D11A17012300B64378 /* AppDelegate.m */; };
+		746172D51A17012300B64378 /* SimulTube.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 746172D31A17012300B64378 /* SimulTube.xcdatamodeld */; };
+		746172D81A17012300B64378 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 746172D71A17012300B64378 /* ViewController.m */; };
+		746172DB1A17012300B64378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 746172D91A17012300B64378 /* Main.storyboard */; };
+		746172DD1A17012300B64378 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 746172DC1A17012300B64378 /* Images.xcassets */; };
+		746172E01A17012300B64378 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 746172DE1A17012300B64378 /* LaunchScreen.xib */; };
+		746172EC1A17012300B64378 /* SimulTubeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 746172EB1A17012300B64378 /* SimulTubeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		746172E61A17012300B64378 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 746172C11A17012300B64378 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 746172C81A17012300B64378;
+			remoteInfo = SimulTube;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		746172C91A17012300B64378 /* SimulTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimulTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		746172CD1A17012300B64378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		746172CE1A17012300B64378 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		746172D01A17012300B64378 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		746172D11A17012300B64378 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		746172D41A17012300B64378 /* SimulTube.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimulTube.xcdatamodel; sourceTree = "<group>"; };
+		746172D61A17012300B64378 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		746172D71A17012300B64378 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		746172DA1A17012300B64378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		746172DC1A17012300B64378 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		746172DF1A17012300B64378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		746172E51A17012300B64378 /* SimulTubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimulTubeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		746172EA1A17012300B64378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		746172EB1A17012300B64378 /* SimulTubeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulTubeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		746172C61A17012300B64378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		746172E21A17012300B64378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		746172C01A17012300B64378 = {
+			isa = PBXGroup;
+			children = (
+				746172CB1A17012300B64378 /* SimulTube */,
+				746172E81A17012300B64378 /* SimulTubeTests */,
+				746172CA1A17012300B64378 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		746172CA1A17012300B64378 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				746172C91A17012300B64378 /* SimulTube.app */,
+				746172E51A17012300B64378 /* SimulTubeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		746172CB1A17012300B64378 /* SimulTube */ = {
+			isa = PBXGroup;
+			children = (
+				746172D01A17012300B64378 /* AppDelegate.h */,
+				746172D11A17012300B64378 /* AppDelegate.m */,
+				746172D61A17012300B64378 /* ViewController.h */,
+				746172D71A17012300B64378 /* ViewController.m */,
+				746172D91A17012300B64378 /* Main.storyboard */,
+				746172DC1A17012300B64378 /* Images.xcassets */,
+				746172DE1A17012300B64378 /* LaunchScreen.xib */,
+				746172D31A17012300B64378 /* SimulTube.xcdatamodeld */,
+				746172CC1A17012300B64378 /* Supporting Files */,
+			);
+			path = SimulTube;
+			sourceTree = "<group>";
+		};
+		746172CC1A17012300B64378 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				746172CD1A17012300B64378 /* Info.plist */,
+				746172CE1A17012300B64378 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		746172E81A17012300B64378 /* SimulTubeTests */ = {
+			isa = PBXGroup;
+			children = (
+				746172EB1A17012300B64378 /* SimulTubeTests.m */,
+				746172E91A17012300B64378 /* Supporting Files */,
+			);
+			path = SimulTubeTests;
+			sourceTree = "<group>";
+		};
+		746172E91A17012300B64378 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				746172EA1A17012300B64378 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		746172C81A17012300B64378 /* SimulTube */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 746172EF1A17012300B64378 /* Build configuration list for PBXNativeTarget "SimulTube" */;
+			buildPhases = (
+				746172C51A17012300B64378 /* Sources */,
+				746172C61A17012300B64378 /* Frameworks */,
+				746172C71A17012300B64378 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimulTube;
+			productName = SimulTube;
+			productReference = 746172C91A17012300B64378 /* SimulTube.app */;
+			productType = "com.apple.product-type.application";
+		};
+		746172E41A17012300B64378 /* SimulTubeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 746172F21A17012300B64378 /* Build configuration list for PBXNativeTarget "SimulTubeTests" */;
+			buildPhases = (
+				746172E11A17012300B64378 /* Sources */,
+				746172E21A17012300B64378 /* Frameworks */,
+				746172E31A17012300B64378 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				746172E71A17012300B64378 /* PBXTargetDependency */,
+			);
+			name = SimulTubeTests;
+			productName = SimulTubeTests;
+			productReference = 746172E51A17012300B64378 /* SimulTubeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		746172C11A17012300B64378 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = SimulTube;
+				TargetAttributes = {
+					746172C81A17012300B64378 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					746172E41A17012300B64378 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 746172C81A17012300B64378;
+					};
+				};
+			};
+			buildConfigurationList = 746172C41A17012300B64378 /* Build configuration list for PBXProject "SimulTube" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 746172C01A17012300B64378;
+			productRefGroup = 746172CA1A17012300B64378 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				746172C81A17012300B64378 /* SimulTube */,
+				746172E41A17012300B64378 /* SimulTubeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		746172C71A17012300B64378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				746172DB1A17012300B64378 /* Main.storyboard in Resources */,
+				746172E01A17012300B64378 /* LaunchScreen.xib in Resources */,
+				746172DD1A17012300B64378 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		746172E31A17012300B64378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		746172C51A17012300B64378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				746172D21A17012300B64378 /* AppDelegate.m in Sources */,
+				746172CF1A17012300B64378 /* main.m in Sources */,
+				746172D81A17012300B64378 /* ViewController.m in Sources */,
+				746172D51A17012300B64378 /* SimulTube.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		746172E11A17012300B64378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				746172EC1A17012300B64378 /* SimulTubeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		746172E71A17012300B64378 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 746172C81A17012300B64378 /* SimulTube */;
+			targetProxy = 746172E61A17012300B64378 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		746172D91A17012300B64378 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				746172DA1A17012300B64378 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		746172DE1A17012300B64378 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				746172DF1A17012300B64378 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		746172ED1A17012300B64378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		746172EE1A17012300B64378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		746172F01A17012300B64378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimulTube/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		746172F11A17012300B64378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimulTube/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		746172F31A17012300B64378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SimulTubeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimulTube.app/SimulTube";
+			};
+			name = Debug;
+		};
+		746172F41A17012300B64378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SimulTubeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimulTube.app/SimulTube";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		746172C41A17012300B64378 /* Build configuration list for PBXProject "SimulTube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				746172ED1A17012300B64378 /* Debug */,
+				746172EE1A17012300B64378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		746172EF1A17012300B64378 /* Build configuration list for PBXNativeTarget "SimulTube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				746172F01A17012300B64378 /* Debug */,
+				746172F11A17012300B64378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		746172F21A17012300B64378 /* Build configuration list for PBXNativeTarget "SimulTubeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				746172F31A17012300B64378 /* Debug */,
+				746172F41A17012300B64378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		746172D31A17012300B64378 /* SimulTube.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				746172D41A17012300B64378 /* SimulTube.xcdatamodel */,
+			);
+			currentVersion = 746172D41A17012300B64378 /* SimulTube.xcdatamodel */;
+			path = SimulTube.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 746172C11A17012300B64378 /* Project object */;
+}
