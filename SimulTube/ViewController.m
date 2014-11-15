@@ -29,8 +29,7 @@
 - (IBAction)playVideo:(id)sender {
     AVPlayer *videoPlayer = [[AVPlayer alloc] initWithURL:[NSURL URLWithString:@"http://youtu.be/L8eRzOYhLuw?t=11s"]];
     AVPlayerLayer *videoPlayerLayer = [AVPlayerLayer playerLayerWithPlayer:videoPlayer];
-    CALayer *caLayer = [[CALayer alloc] initWithLayer:videoPlayerLayer];
-    caLayer.
+    [self.view.layer addSublayer:videoPlayerLayer];
 }
 
 @end

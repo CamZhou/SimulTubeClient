@@ -172,6 +172,11 @@
 					746172C81A17012300B64378 = {
 						CreatedOnToolsVersion = 6.0.1;
 						DevelopmentTeam = XFCDXZK26Z;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					746172E41A17012300B64378 = {
 						CreatedOnToolsVersion = 6.0.1;
