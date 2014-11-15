@@ -10,13 +10,10 @@
 		746172CF1A17012300B64378 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 746172CE1A17012300B64378 /* main.m */; };
 		746172D21A17012300B64378 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 746172D11A17012300B64378 /* AppDelegate.m */; };
 		746172D51A17012300B64378 /* SimulTube.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 746172D31A17012300B64378 /* SimulTube.xcdatamodeld */; };
-		746172D81A17012300B64378 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 746172D71A17012300B64378 /* ViewController.m */; };
 		746172DB1A17012300B64378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 746172D91A17012300B64378 /* Main.storyboard */; };
 		746172DD1A17012300B64378 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 746172DC1A17012300B64378 /* Images.xcassets */; };
 		746172E01A17012300B64378 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 746172DE1A17012300B64378 /* LaunchScreen.xib */; };
 		746172EC1A17012300B64378 /* SimulTubeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 746172EB1A17012300B64378 /* SimulTubeTests.m */; };
-		74FA52501A1750D200AFFF45 /* LBYouTubeExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FA524D1A1750D200AFFF45 /* LBYouTubeExtractor.m */; };
-		74FA52511A1750D200AFFF45 /* LBYouTubePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FA524F1A1750D200AFFF45 /* LBYouTubePlayerViewController.m */; };
 		74FA52531A1750FC00AFFF45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FA52521A1750FC00AFFF45 /* UIKit.framework */; };
 		74FA52551A17510500AFFF45 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FA52541A17510400AFFF45 /* MediaPlayer.framework */; };
 		74FA52571A17510F00AFFF45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FA52561A17510F00AFFF45 /* Foundation.framework */; };
@@ -40,19 +37,12 @@
 		746172D01A17012300B64378 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		746172D11A17012300B64378 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		746172D41A17012300B64378 /* SimulTube.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimulTube.xcdatamodel; sourceTree = "<group>"; };
-		746172D61A17012300B64378 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		746172D71A17012300B64378 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		746172DA1A17012300B64378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		746172DC1A17012300B64378 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		746172DF1A17012300B64378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		746172E51A17012300B64378 /* SimulTubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimulTubeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		746172EA1A17012300B64378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		746172EB1A17012300B64378 /* SimulTubeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulTubeTests.m; sourceTree = "<group>"; };
-		74FA524B1A1750D200AFFF45 /* LBYouTube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBYouTube.h; sourceTree = "<group>"; };
-		74FA524C1A1750D200AFFF45 /* LBYouTubeExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBYouTubeExtractor.h; sourceTree = "<group>"; };
-		74FA524D1A1750D200AFFF45 /* LBYouTubeExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBYouTubeExtractor.m; sourceTree = "<group>"; };
-		74FA524E1A1750D200AFFF45 /* LBYouTubePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBYouTubePlayerViewController.h; sourceTree = "<group>"; };
-		74FA524F1A1750D200AFFF45 /* LBYouTubePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBYouTubePlayerViewController.m; sourceTree = "<group>"; };
 		74FA52521A1750FC00AFFF45 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		74FA52541A17510400AFFF45 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		74FA52561A17510F00AFFF45 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -106,15 +96,8 @@
 		746172CB1A17012300B64378 /* SimulTube */ = {
 			isa = PBXGroup;
 			children = (
-				74FA524B1A1750D200AFFF45 /* LBYouTube.h */,
-				74FA524C1A1750D200AFFF45 /* LBYouTubeExtractor.h */,
-				74FA524D1A1750D200AFFF45 /* LBYouTubeExtractor.m */,
-				74FA524E1A1750D200AFFF45 /* LBYouTubePlayerViewController.h */,
-				74FA524F1A1750D200AFFF45 /* LBYouTubePlayerViewController.m */,
 				746172D01A17012300B64378 /* AppDelegate.h */,
 				746172D11A17012300B64378 /* AppDelegate.m */,
-				746172D61A17012300B64378 /* ViewController.h */,
-				746172D71A17012300B64378 /* ViewController.m */,
 				746172D91A17012300B64378 /* Main.storyboard */,
 				746172DC1A17012300B64378 /* Images.xcassets */,
 				746172DE1A17012300B64378 /* LaunchScreen.xib */,
@@ -257,10 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				746172D21A17012300B64378 /* AppDelegate.m in Sources */,
-				74FA52501A1750D200AFFF45 /* LBYouTubeExtractor.m in Sources */,
 				746172CF1A17012300B64378 /* main.m in Sources */,
-				74FA52511A1750D200AFFF45 /* LBYouTubePlayerViewController.m in Sources */,
-				746172D81A17012300B64378 /* ViewController.m in Sources */,
 				746172D51A17012300B64378 /* SimulTube.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

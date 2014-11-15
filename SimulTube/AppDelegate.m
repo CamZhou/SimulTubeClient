@@ -17,7 +17,97 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // Override point for customization after application launch.
+    NSUUID *beaconUUID = [[NSUUID alloc] initWithUUIDString:@"74278BDA-B644-4520-8F0C-720EAF059935"];
+    NSString *regionIdentifier = @"BeaconInMyPocket";
+    CLBeaconRegion *beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:beaconUUID identifier:regionIdentifier];
+
+    switch ([CLLocationManager authorizationStatus]) {
+        case kCLAuthorizationStatusAuthorizedAlways:
+            NSLog(@"Authorized Always");
+            break;
+        case kCLAuthorizationStatusAuthorizedWhenInUse:
+            NSLog(@"Authorized when in use");
+            break;
+        case kCLAuthorizationStatusDenied:
+            NSLog(@"Denied");
+            break;
+        case kCLAuthorizationStatusNotDetermined:
+            NSLog(@"Not determined");
+            break;
+        case kCLAuthorizationStatusRestricted:
+            NSLog(@"Restricted");
+            break;
+
+        default:
+            break;
+    }
+
+    self.locationManager = [[CLLocationManager alloc] init];
+    if([self.locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
+        [self.locationManager requestAlwaysAuthorization];
+    }
+    self.locationManager.delegate = self;
+    self.locationManager.pausesLocationUpdatesAutomatically = NO;
+    [self.locationManager startMonitoringForRegion:beaconRegion];
+    [self.locationManager startRangingBeaconsInRegion:beaconRegion];
+    [self.locationManager startUpdatingLocation];
+
     return YES;
+}
+
+-(void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
+    [manager startRangingBeaconsInRegion:(CLBeaconRegion*)region];
+    [self.locationManager startUpdatingLocation];
+
+    NSLog(@"You entered the region.");
+    [self sendLocalNotificationWithMessage:@"You entered the region."];
+}
+
+-(void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region {
+    [manager stopRangingBeaconsInRegion:(CLBeaconRegion*)region];
+    [self.locationManager stopUpdatingLocation];
+
+    NSLog(@"You exited the region.");
+    [self sendLocalNotificationWithMessage:@"You exited the region."];
+}
+
+-(void)sendLocalNotificationWithMessage:(NSString*)message {
+    UILocalNotification *notification = [[UILocalNotification alloc] init];
+    notification.alertBody = message;
+    [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+}
+
+-(void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region {
+    NSString *message = @"";
+
+    if(beacons.count > 0) {
+        CLBeacon *nearestBeacon = beacons.firstObject;
+        if(nearestBeacon.proximity == self.lastProximity ||
+                nearestBeacon.proximity == CLProximityUnknown) {
+            return;
+        }
+        self.lastProximity = nearestBeacon.proximity;
+
+        switch(nearestBeacon.proximity) {
+            case CLProximityFar:
+                message = @"You are far away from the beacon";
+                break;
+            case CLProximityNear:
+                message = @"You are near the beacon";
+                break;
+            case CLProximityImmediate:
+                message = @"You are in the immediate proximity of the beacon";
+                break;
+            case CLProximityUnknown:
+                return;
+        }
+    } else {
+        message = @"No beacons are nearby";
+    }
+
+    NSLog(@"%@", message);
+    [self sendLocalNotificationWithMessage:message];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
