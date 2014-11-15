@@ -15,6 +15,7 @@
 		746172DD1A17012300B64378 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 746172DC1A17012300B64378 /* Images.xcassets */; };
 		746172E01A17012300B64378 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 746172DE1A17012300B64378 /* LaunchScreen.xib */; };
 		746172EC1A17012300B64378 /* SimulTubeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 746172EB1A17012300B64378 /* SimulTubeTests.m */; };
+		74B3CADF1A1708FB000F24E6 /* videoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B3CADE1A1708FB000F24E6 /* videoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		746172E51A17012300B64378 /* SimulTubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimulTubeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		746172EA1A17012300B64378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		746172EB1A17012300B64378 /* SimulTubeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulTubeTests.m; sourceTree = "<group>"; };
+		74B3CADD1A1708FB000F24E6 /* videoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videoView.h; sourceTree = "<group>"; };
+		74B3CADE1A1708FB000F24E6 /* videoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = videoView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				746172D61A17012300B64378 /* ViewController.h */,
 				746172D71A17012300B64378 /* ViewController.m */,
 				746172D91A17012300B64378 /* Main.storyboard */,
+				74B3CADD1A1708FB000F24E6 /* videoView.h */,
+				74B3CADE1A1708FB000F24E6 /* videoView.m */,
 				746172DC1A17012300B64378 /* Images.xcassets */,
 				746172DE1A17012300B64378 /* LaunchScreen.xib */,
 				746172D31A17012300B64378 /* SimulTube.xcdatamodeld */,
@@ -171,6 +176,7 @@
 				TargetAttributes = {
 					746172C81A17012300B64378 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = XFCDXZK26Z;
 					};
 					746172E41A17012300B64378 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -223,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				746172D21A17012300B64378 /* AppDelegate.m in Sources */,
+				74B3CADF1A1708FB000F24E6 /* videoView.m in Sources */,
 				746172CF1A17012300B64378 /* main.m in Sources */,
 				746172D81A17012300B64378 /* ViewController.m in Sources */,
 				746172D51A17012300B64378 /* SimulTube.xcdatamodeld in Sources */,
@@ -349,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SimulTube/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SimulTube/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -418,6 +427,7 @@
 				746172F11A17012300B64378 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		746172F21A17012300B64378 /* Build configuration list for PBXNativeTarget "SimulTubeTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +436,7 @@
 				746172F41A17012300B64378 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
