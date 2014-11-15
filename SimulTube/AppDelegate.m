@@ -17,7 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    // Override point for customization after application launch.
     NSUUID *beaconUUID = [[NSUUID alloc] initWithUUIDString:@"74278BDA-B644-4520-8F0C-720EAF059935"];
     NSString *regionIdentifier = @"BeaconInMyPocket";
     CLBeaconRegion *beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:beaconUUID identifier:regionIdentifier];
@@ -44,7 +43,7 @@
     }
 
     self.locationManager = [[CLLocationManager alloc] init];
-    if([self.locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
+    if ([self.locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
         [self.locationManager requestAlwaysAuthorization];
     }
     self.locationManager.delegate = self;
@@ -56,38 +55,47 @@
     return YES;
 }
 
--(void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
-    [manager startRangingBeaconsInRegion:(CLBeaconRegion*)region];
+- (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
+    [manager startRangingBeaconsInRegion:(CLBeaconRegion *) region];
     [self.locationManager startUpdatingLocation];
 
     NSLog(@"You entered the region.");
     [self sendLocalNotificationWithMessage:@"You entered the region."];
 }
 
--(void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region {
-    [manager stopRangingBeaconsInRegion:(CLBeaconRegion*)region];
+- (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region {
+    [manager stopRangingBeaconsInRegion:(CLBeaconRegion *) region];
     [self.locationManager stopUpdatingLocation];
 
     NSLog(@"You exited the region.");
     [self sendLocalNotificationWithMessage:@"You exited the region."];
 }
 
--(void)sendLocalNotificationWithMessage:(NSString*)message {
+- (void)sendLocalNotificationWithMessage:(NSString *)message {
     UILocalNotification *notification = [[UILocalNotification alloc] init];
     notification.alertBody = message;
     [[UIApplication sharedApplication] scheduleLocalNotification:notification];
 }
 
--(void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region {
+- (void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region {
     NSString *message = @"";
+    Firebase *rootRef = [[Firebase alloc] initWithUrl:@"https://simultube.firebaseio.com/"];
 
-    if(beacons.count > 0) {
+    if (beacons.count > 0) {
         CLBeacon *nearestBeacon = beacons.firstObject;
-        if(nearestBeacon.proximity == self.lastProximity ||
-                nearestBeacon.proximity == CLProximityUnknown) {
+        if (nearestBeacon.proximity == CLProximityUnknown) {
             return;
         }
-        self.lastProximity = nearestBeacon.proximity;
+
+        double accuracy = nearestBeacon.accuracy;
+        NSString *vendorId = [[UIDevice currentDevice] identifierForVendor].UUIDString;
+
+        Firebase *devicesRef = [rootRef childByAppendingPath:@"devices"];
+        NSDictionary *newDevice = @{
+                @"id": vendorId,
+                @"distance": [NSNumber numberWithDouble:accuracy]
+        };
+        [devicesRef setValue:newDevice];
 
         switch(nearestBeacon.proximity) {
             case CLProximityFar:
@@ -107,7 +115,7 @@
     }
 
     NSLog(@"%@", message);
-    [self sendLocalNotificationWithMessage:message];
+    //[self sendLocalNotificationWithMessage:message];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -160,9 +168,9 @@
     if (_persistentStoreCoordinator != nil) {
         return _persistentStoreCoordinator;
     }
-    
+
     // Create the coordinator and store
-    
+
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"SimulTube.sqlite"];
     NSError *error = nil;
@@ -179,7 +187,7 @@
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
     }
-    
+
     return _persistentStoreCoordinator;
 }
 
@@ -189,7 +197,7 @@
     if (_managedObjectContext != nil) {
         return _managedObjectContext;
     }
-    
+
     NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
     if (!coordinator) {
         return nil;
