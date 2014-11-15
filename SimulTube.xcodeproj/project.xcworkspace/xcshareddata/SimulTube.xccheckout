@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A9D74D06-5F55-4E23-8C1B-16BD0C6F86DF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SimulTube</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4A361CAD3A424916F8B7C1DE70B2FF7E5982D7D7</key>
+		<string>https://github.com/CamZhou/SimulTubeClient.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SimulTube.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4A361CAD3A424916F8B7C1DE70B2FF7E5982D7D7</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/CamZhou/SimulTubeClient.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4A361CAD3A424916F8B7C1DE70B2FF7E5982D7D7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4A361CAD3A424916F8B7C1DE70B2FF7E5982D7D7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SimulTube</string>
+		</dict>
+	</array>
+</dict>
+</plist>
