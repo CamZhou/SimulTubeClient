@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
+
 @interface ViewController ()
 
 @end
@@ -27,9 +28,31 @@
 }
 
 - (IBAction)playVideo:(id)sender {
-    AVPlayer *videoPlayer = [[AVPlayer alloc] initWithURL:[NSURL URLWithString:@"http://youtu.be/L8eRzOYhLuw?t=11s"]];
-    AVPlayerLayer *videoPlayerLayer = [AVPlayerLayer playerLayerWithPlayer:videoPlayer];
-    [self.view.layer addSublayer:videoPlayerLayer];
+    LBYouTubeExtractor* extractor = [[LBYouTubeExtractor alloc] initWithURL:[NSURL URLWithString:@"https://www.youtube.com/watch?v=LzHFD1sEqpE"] quality:LBYouTubeVideoQualityLarge];
+    
+    [extractor extractVideoURLWithCompletionBlock:^(NSURL *videoURL, NSError *error) {
+        if(!error) {
+            NSLog(@"Did extract video URL using completion block: %@", videoURL);
+        } else {
+            NSLog(@"Failed extracting video URL using block due to error:%@", error);
+        }
+    }];
+    
+    // Setup the player controller and add it's view as a subview:
+    
+    LBYouTubePlayerViewController* controller = [[LBYouTubePlayerViewController alloc] initWithYouTubeURL:[NSURL URLWithString:@"https://www.youtube.com/watch?v=LzHFD1sEqpE"] quality:LBYouTubeVideoQualityLarge];
+    controller.delegate = self;
+
+    self.view.window.rootViewController = controller;
+    [self.view.window makeKeyAndVisible];
+}
+
+-(void)youTubePlayerViewController:(LBYouTubePlayerViewController *)controller didSuccessfullyExtractYouTubeURL:(NSURL *)videoURL {
+    NSLog(@"Did extract video source:%@", videoURL);
+}
+
+-(void)youTubePlayerViewController:(LBYouTubePlayerViewController *)controller failedExtractingYouTubeURLWithError:(NSError *)error {
+    NSLog(@"Failed loading video due to error:%@", error);
 }
 
 @end

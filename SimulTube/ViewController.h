@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LBYouTube.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <LBYouTubePlayerControllerDelegate>
 
 
 @end

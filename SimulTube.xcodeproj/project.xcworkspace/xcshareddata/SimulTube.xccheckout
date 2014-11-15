@@ -12,6 +12,8 @@
 	<dict>
 		<key>4A361CAD3A424916F8B7C1DE70B2FF7E5982D7D7</key>
 		<string>https://github.com/CamZhou/SimulTubeClient.git</string>
+		<key>CE31FB7ED082D131E9CBB0D02B94CF38C0F9DBC3</key>
+		<string>https://github.com/CamZhou/SimulTubeClient.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>SimulTube.xcodeproj</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>4A361CAD3A424916F8B7C1DE70B2FF7E5982D7D7</key>
 		<string>../..</string>
+		<key>CE31FB7ED082D131E9CBB0D02B94CF38C0F9DBC3</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/CamZhou/SimulTubeClient.git</string>
@@ -28,6 +32,14 @@
 	<string>4A361CAD3A424916F8B7C1DE70B2FF7E5982D7D7</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CE31FB7ED082D131E9CBB0D02B94CF38C0F9DBC3</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
